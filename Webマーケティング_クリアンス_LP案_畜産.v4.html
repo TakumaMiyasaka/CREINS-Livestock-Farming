@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>畜舎全体の衛生環境を変える｜水中除菌タブレット クリアンス（CREINS）</title>
+  <meta name="description" content="クリアンス（CREINS）は飲水ライン・畜舎内・空間の3つのアプローチで畜舎全体の衛生管理をサポート。pH非依存・耐性形成なし・皮膚刺激性低い。全国100件以上の農場・施設での導入実績（CLOX社調べ）。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
+
+    :root {
+      --primary:      #5bc3ec;
+      --primary-sub:  #2ca6e0;
+      --primary-deep: #084d9f;
+      --primary-mid:  #2b5ea8;
+      --primary-bg:   rgba(91, 195, 236, 0.10);
+      --text:         #333333;
+      --text-mid:     #556270;
+      --text-light:   #7f8a94;
+      --white:        #ffffff;
+      --surface:      #fafafa;
+      --surface-alt:  #f7f7f7;
+      --surface-blue: #d4dfed;
+      --border:       #d9e7f1;
+      --border-mid:   #c2d6e5;
+      --green:        #1d7a4a;
+      --green-bg:     #eaf4ee;
+      --indicator-bad:#b03030;
+      --container:    1200px;
+      --section:      90px 0;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      overflow-x: hidden;
+      background: var(--white);
+    }
+
+    img { max-width: 100%; height: auto; display: block }
+    a { text-decoration: none; color: inherit }
+    strong { font-weight: 700 }
+
+    .container { max-width: var(--container); margin: 0 auto; padding: 0 24px }
+    section { padding: var(--section) }
+
+    h2.section-title {
+      font-size: 2.15rem;
+      font-weight: 700;
+      color: var(--primary-deep);
+      letter-spacing: .04em;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    .section-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--primary-deep);
+      margin-bottom: 12px;
+    }
+
+    .section-sub {
+      color: var(--text-light);
+      font-size: .9rem;
+      margin-bottom: 56px;
+      line-height: 1.7;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: var(--primary);
+      margin: 16px 0 40px;
+    }
+    .divider.center { margin: 16px auto 40px }
+
+    /* ── Buttons ── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary);
+      color: var(--white);
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 62px 16px 36px;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      cursor: pointer;
+      transition: all .25s;
+      letter-spacing: .05em;
+      position: relative;
+      box-shadow: 0 12px 32px rgba(91, 195, 236, .25);
+    }
+    .btn-primary:hover {
+      background: transparent;
+      border-color: var(--primary);
+      color: var(--primary);
+      box-shadow: none;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: var(--primary);
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: .9rem;
+      padding: 14px 58px 14px 32px;
+      border-radius: 999px;
+      border: 1.5px solid var(--primary);
+      cursor: pointer;
+      transition: all .25s;
+      letter-spacing: .05em;
+      position: relative;
+    }
+    .btn-outline:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .btn-outline-white {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: var(--white);
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 62px 16px 36px;
+      border-radius: 999px;
+      border: 1.5px solid rgba(255,255,255,.6);
+      cursor: pointer;
+      transition: all .25s;
+      letter-spacing: .05em;
+      position: relative;
+    }
+    .btn-outline-white:hover {
+      background: var(--white);
+      border-color: var(--white);
+      color: var(--primary-deep);
+    }
+
+    .btn-primary::after,
+    .btn-outline::after,
+    .btn-outline-white::after {
+      content: '';
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      transform: translateY(-50%) rotate(45deg);
+      border-top: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+    }
+
+    .btn-primary-light {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      color: var(--primary-deep);
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 62px 16px 36px;
+      border-radius: 999px;
+      border: 1px solid var(--white);
+      cursor: pointer;
+      transition: all .25s;
+      letter-spacing: .05em;
+      position: relative;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, .14);
+    }
+
+    .btn-primary-light:hover {
+      background: transparent;
+      color: var(--white);
+      box-shadow: none;
+    }
+
+    .btn-primary-light::after {
+      content: '';
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      transform: translateY(-50%) rotate(45deg);
+      border-top: 1.5px solid currentColor;
+      border-right: 1.5px solid currentColor;
+    }
+
+    .floating-cta {
+      position: fixed;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 95;
+      width: 188px;
+      padding: 16px 16px 18px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.94);
+      border: 1px solid rgba(91, 195, 236, .35);
+      box-shadow: 0 20px 42px rgba(8, 77, 159, .14);
+      backdrop-filter: blur(10px);
+      transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+    }
+
+    .floating-cta.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(-50%) translateX(12px);
+    }
+
+    .floating-cta-label {
+      display: block;
+      margin-bottom: 8px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .64rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--primary-sub);
+    }
+
+    .floating-cta-copy {
+      font-size: .78rem;
+      line-height: 1.65;
+      color: var(--text-mid);
+      margin-bottom: 14px;
+    }
+
+    .floating-cta .btn-primary {
+      width: 100%;
+      min-height: 54px;
+      padding: 14px 52px 14px 24px;
+      font-size: .88rem;
+      white-space: nowrap;
+      box-shadow: 0 10px 24px rgba(91, 195, 236, .22);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(to bottom, rgba(255,255,255,.96), rgba(255,255,255,.88));
+      border-bottom: 1px solid rgba(217, 231, 241, .85);
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 28px rgba(8, 77, 159, .06);
+    }
+    .header .container { display: flex; align-items: center; justify-content: space-between }
+    .header-logo { display: flex; flex-direction: column; line-height: 1.2 }
+    .header-logo-main {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-deep);
+      letter-spacing: .04em;
+    }
+    .header-logo-sub { font-size: .72rem; color: var(--text-light); letter-spacing: .02em }
+    .header-right { display: flex; align-items: center; gap: 24px }
+    .header-tel { font-size: .85rem; color: var(--primary-deep); font-weight: 500; font-family: 'Montserrat', sans-serif }
+    .header-tel-label { font-family: 'Noto Sans JP', sans-serif; font-size: .7rem; color: var(--text-light); display: block; margin-bottom: 1px }
+
+    /* ── Hero ── */
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(91,195,236,.20), transparent 32%),
+        linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 48%, rgba(212,223,237,.55) 100%);
+      min-height: calc(100vh - 82px);
+      display: flex;
+      align-items: center;
+      padding: 56px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.06fr) minmax(340px, 0.94fr);
+      gap: 28px;
+      align-items: center;
+    }
+    .hero-text {
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(217, 231, 241, .9);
+      border-radius: 40px;
+      padding: 48px 44px;
+      box-shadow: 0 24px 54px rgba(8, 77, 159, .08);
+    }
+    .hero-tag {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--primary-sub);
+      border: 1px solid var(--primary);
+      padding: 7px 16px;
+      border-radius: 999px;
+      margin-bottom: 28px;
+      background: rgba(255,255,255,.75);
+    }
+    .hero h1 {
+      font-size: clamp(1.96rem, 3.55vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.35;
+      color: var(--primary-deep);
+      letter-spacing: .02em;
+      margin-bottom: 28px;
+    }
+    .hero h1 .accent { color: var(--primary-sub) }
+    .hero p.lead {
+      font-size: 1.03rem;
+      color: var(--text-mid);
+      line-height: 1.95;
+      margin-bottom: 40px;
+      max-width: 520px;
+    }
+    .hero-visual {
+      position: relative;
+      width: 100%;
+      max-width: 560px;
+      justify-self: end;
+    }
+    .hero-img-wrap {
+      border-radius: 44px;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(8,77,159,.12), rgba(91,195,236,.26));
+      border: 1px solid rgba(255,255,255,.65);
+      box-shadow: 0 32px 64px rgba(8, 77, 159, .14);
+    }
+    .hero-img-placeholder {
+      height: 520px;
+      background: linear-gradient(160deg, rgba(8,77,159,.92), rgba(44,166,224,.88));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-img-placeholder img { width: 100%; height: 100%; object-fit: cover }
+
+    .hero-stat-badge {
+      position: absolute;
+      bottom: 28px;
+      left: 28px;
+      background: var(--white);
+      border: 1px solid rgba(91, 195, 236, .35);
+      border-radius: 26px;
+      padding: 20px 26px;
+      box-shadow: 0 18px 40px rgba(0,0,0,.12);
+    }
+    .hero-stat-badge .num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--primary-deep);
+      line-height: 1;
+      display: block;
+    }
+    .hero-stat-badge .desc { font-size: .75rem; color: var(--text-mid); margin-top: 4px; line-height: 1.5 }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+    .hero-cta-note {
+      margin-top: 16px;
+      font-size: .78rem;
+      color: var(--text-light);
+    }
+
+    .hero-product-label {
+      margin-top: 20px;
+      margin-bottom: 32px;
+      padding: 14px 18px;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--primary);
+      border-radius: 6px;
+      background: rgba(212, 223, 237, .22);
+    }
+    .hero-product-label .label-title {
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--primary-deep);
+      margin-bottom: 5px;
+    }
+    .hero-product-label .label-body {
+      font-size: .75rem;
+      color: var(--text-mid);
+      line-height: 1.65;
+    }
+
+    /* ── Pain ── */
+    .pain { background: var(--white) }
+    .pain-intro { max-width: 600px }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .pain-card {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-bottom: 3px solid transparent;
+      border-radius: 28px;
+      padding: 40px 36px;
+      transition: background .2s, border-color .2s, transform .2s;
+    }
+    .pain-card:hover {
+      background: var(--white);
+      border-bottom-color: var(--primary);
+      transform: translateY(-3px);
+    }
+    .pain-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .72rem;
+      font-weight: 600;
+      color: var(--primary-deep);
+      letter-spacing: .12em;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .pain-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary-deep); margin-bottom: 14px; line-height: 1.5 }
+    .pain-card p { font-size: .88rem; color: var(--text-mid); line-height: 1.9 }
+    .pain-data-tag {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--primary-sub);
+      margin-bottom: 10px;
+    }
+
+    /* ── About ── */
+    .about { background: var(--surface-alt) }
+    .about-inner { display: grid; grid-template-columns: 1fr 400px; gap: 72px; align-items: center }
+    .about-text h3 { font-size: 1.5rem; font-weight: 700; color: var(--primary-deep); margin-bottom: 24px; line-height: 1.5 }
+    .about-text p { font-size: .95rem; color: var(--text-mid); line-height: 2; margin-bottom: 20px }
+    .about-features { display: flex; flex-direction: column; gap: 12px; margin-top: 28px }
+    .about-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--white);
+      border-left: 3px solid var(--primary);
+      border-radius: 0 18px 18px 0;
+    }
+    .about-feature-icon { width: 20px; height: 20px; flex-shrink: 0; margin-top: 1px }
+    .about-feature-text { font-size: .88rem; color: var(--text-mid); line-height: 1.6 }
+    .about-feature-text strong { color: var(--primary-deep); display: block; margin-bottom: 2px }
+    .about-img-wrap { border-radius: 2px; overflow: hidden }
+
+    /* ── Use Cases ── */
+    .usecases { background: var(--white) }
+    .usecases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px }
+    .usecase-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-bottom: 3px solid var(--border);
+      border-radius: 28px;
+      padding: 36px 32px;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+    .usecase-card:hover {
+      border-bottom-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 18px 36px rgba(8, 77, 159, .07);
+    }
+    .usecase-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--primary-deep);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .usecase-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary-deep); margin-bottom: 12px; line-height: 1.55 }
+    .usecase-card p { font-size: .88rem; color: var(--text-mid); line-height: 1.9 }
+    .usecase-banner {
+      margin-top: 44px;
+      background: linear-gradient(135deg, var(--primary-deep), var(--primary-mid));
+      padding: 40px 48px;
+      text-align: center;
+      border-radius: 34px;
+    }
+    .usecase-banner-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 12px;
+    }
+    .usecase-banner-text { font-size: 1.3rem; font-weight: 700; color: var(--white); line-height: 1.65; margin-bottom: 10px }
+    .usecase-banner-text strong { color: var(--primary) }
+    .usecase-banner-sub { font-size: .88rem; color: rgba(255,255,255,.82); line-height: 1.8 }
+
+    /* ── Compare ── */
+    .compare { background: var(--white) }
+    .compare-header { max-width: 600px; margin-bottom: 48px }
+    .compare-table-wrap { overflow-x: auto }
+    .compare-table { width: 100%; border-collapse: collapse; font-size: .9rem }
+    .compare-table th { padding: 16px 20px; text-align: center; font-weight: 700; font-size: .8rem; letter-spacing: .04em }
+    .compare-table th:first-child { text-align: left }
+    .compare-table thead tr { background: var(--primary-deep); color: var(--white) }
+    .compare-table thead th.col-creins { background: var(--primary-sub) }
+    .compare-table tbody td {
+      padding: 16px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-mid);
+      vertical-align: middle;
+    }
+    .compare-table tbody td:first-child { text-align: left; font-weight: 700; color: var(--primary-deep); font-size: .87rem }
+    .compare-table tbody tr:hover td { background: var(--surface) }
+    .compare-table .col-creins { background: rgba(91,195,236,.12); font-weight: 700; color: var(--primary-deep) }
+    .val-good { color: var(--green); font-weight: 700 }
+    .val-bad  { color: var(--indicator-bad); font-weight: 500 }
+    .val-mid  { color: var(--text-mid); font-weight: 500 }
+    .val-good::before { content: '○ '; font-size: .85em }
+    .val-bad::before  { content: '△ '; font-size: .85em }
+    .compare-note { font-size: .75rem; color: var(--text-light); margin-top: 14px; text-align: right }
+
+    /* ── Science ── */
+    .science { background: var(--white) }
+
+    /* Science cards */
+    .science-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: 56px;
+    }
+    .science-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      overflow: hidden;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+    .science-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 18px 36px rgba(8, 77, 159, .07);
+    }
+    .science-card-header {
+      background: linear-gradient(135deg, var(--primary-deep), var(--primary-mid));
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .science-card-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      color: var(--primary);
+    }
+    .science-card-header h3 { font-size: .85rem; font-weight: 700; color: var(--white) }
+    .science-card-body { padding: 24px 22px 26px }
+    .science-card-body p { font-size: .83rem; color: var(--text-mid); line-height: 1.8 }
+    .science-card-value {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-sub);
+      margin-bottom: 6px;
+    }
+
+    .science-inner { display: grid; grid-template-columns: 1fr 360px; gap: 64px; align-items: start }
+    .science-text p { font-size: .93rem; line-height: 2; color: var(--text-mid); margin-bottom: 20px }
+    .science-note { font-size: .75rem; color: var(--text-light); margin-top: 24px; line-height: 1.7; border-top: 1px solid var(--border); padding-top: 16px }
+
+    .ph-chart {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 32px 28px;
+      border-radius: 32px;
+      box-shadow: 0 14px 32px rgba(8, 77, 159, .05);
+    }
+    .ph-chart-title { font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-family: 'Montserrat', sans-serif; color: var(--text-light); margin-bottom: 28px }
+    .ph-row { display: grid; grid-template-columns: 52px 1fr 52px; align-items: center; gap: 12px; margin-bottom: 16px }
+    .ph-row-label { font-family: 'Montserrat', sans-serif; font-size: .75rem; color: var(--text-mid); text-align: right }
+    .ph-bar-bg { height: 24px; background: var(--surface-blue); position: relative; overflow: hidden }
+    .ph-bar-fill { height: 100%; transition: width .8s ease }
+    .ph-bar-fill.c-high { background: var(--primary-sub) }
+    .ph-bar-fill.c-mid  { background: #8cc9e6 }
+    .ph-bar-fill.c-low  { background: var(--primary-mid) }
+    .ph-row-val { font-family: 'Montserrat', sans-serif; font-size: .8rem; font-weight: 700; color: var(--text) }
+    .ph-chart-source { font-size: .7rem; color: var(--text-light); margin-top: 20px; line-height: 1.6 }
+
+    /* ── Regulation ── */
+    .regulation { background: var(--surface-alt) }
+    .regulation-inner { background: var(--white); border: 1px solid var(--border); border-radius: 34px; overflow: hidden }
+    .regulation-header { background: linear-gradient(135deg, var(--primary-deep), var(--primary-mid)); padding: 24px 40px; display: flex; align-items: center; gap: 20px }
+    .regulation-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.5);
+      border: 1px solid rgba(255,255,255,.2);
+      padding: 3px 10px;
+      white-space: nowrap;
+    }
+    .regulation-header h3 { font-size: .95rem; font-weight: 700; color: var(--white) }
+    .regulation-body { padding: 40px }
+    .regulation-detail-table { width: 100%; border-collapse: collapse; font-size: .87rem; margin-bottom: 36px }
+    .regulation-detail-table tr { border-bottom: 1px solid var(--border) }
+    .regulation-detail-table th { width: 180px; padding: 13px 18px; text-align: left; font-weight: 700; color: var(--primary-deep); background: var(--surface-alt); font-size: .82rem; vertical-align: top }
+    .regulation-detail-table td { padding: 13px 18px; color: var(--text-mid); line-height: 1.8 }
+    .regulation-timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--border); margin-bottom: 32px }
+    .regulation-step { padding: 28px 24px; border-right: 1px solid var(--border) }
+    .regulation-step:last-child { border-right: none }
+    .regulation-step-num { font-family: 'Montserrat', sans-serif; font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--primary-sub); margin-bottom: 10px; display: block }
+    .regulation-step h4 { font-size: .95rem; font-weight: 700; color: var(--primary-deep); margin-bottom: 8px }
+    .regulation-step p { font-size: .84rem; color: var(--text-mid); line-height: 1.8 }
+    .regulation-result { border: 1.5px solid var(--green); background: var(--green-bg); padding: 24px 28px; display: flex; align-items: flex-start; gap: 20px }
+    .regulation-result-check { width: 32px; height: 32px; background: var(--green); color: var(--white); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; font-weight: 700 }
+    .regulation-result h4 { font-size: 1rem; font-weight: 700; color: var(--green); margin-bottom: 6px }
+    .regulation-result p { font-size: .86rem; color: var(--text-mid); line-height: 1.8 }
+    .regulation-disclaimer { font-size: .74rem; color: var(--text-light); margin-top: 16px; padding: 12px 16px; background: var(--surface-alt); border-left: 2px solid var(--border-mid); line-height: 1.7 }
+
+    /* ── Scenes ── */
+    .scenes { background: var(--white) }
+    .scenes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px }
+    .scene-card { border: 1px solid var(--border); background: var(--white); transition: border-color .2s, transform .2s, box-shadow .2s; border-radius: 28px; overflow: hidden }
+    .scene-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: 0 18px 36px rgba(8, 77, 159, .07) }
+    .scene-img { height: 200px; background: linear-gradient(180deg, rgba(212,223,237,.65), rgba(250,250,250,1)); overflow: hidden }
+    .scene-img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px }
+    .scene-img-placeholder svg { opacity: .32 }
+    .scene-img-placeholder span { font-family: 'Montserrat', sans-serif; font-size: .63rem; letter-spacing: .1em; text-transform: uppercase; color: var(--text-light) }
+    .scene-body { padding: 24px }
+    .scene-body h3 { font-size: 1rem; font-weight: 700; color: var(--primary-deep); margin-bottom: 8px }
+    .scene-body p { font-size: .85rem; color: var(--text-mid); line-height: 1.8 }
+    .scene-uses { margin-top: 12px; display: flex; flex-direction: column; gap: 5px }
+    .scene-use-item { font-size: .78rem; color: var(--text-mid); padding-left: 14px; position: relative; line-height: 1.5 }
+    .scene-use-item::before { content: ''; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; border-radius: 50%; background: var(--primary) }
+
+    /* ── Reasons ── */
+    .reasons { background: var(--surface-alt) }
+    .reasons-header { max-width: 600px; margin-bottom: 0 }
+    .reasons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 0 }
+    .reason-card { background: var(--white); padding: 36px 32px; border: 1px solid var(--border); border-bottom: 3px solid var(--border); transition: border-color .2s, transform .2s; border-radius: 28px }
+    .reason-card:hover { border-bottom-color: var(--primary); transform: translateY(-3px) }
+    .reason-num { font-family: 'Montserrat', sans-serif; font-size: .7rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--primary-deep); margin-bottom: 16px; display: block }
+    .reason-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary-deep); margin-bottom: 12px }
+    .reason-card p { font-size: .88rem; color: var(--text-mid); line-height: 1.9 }
+
+    /* ── FAQ Accordion ── */
+    .faq-section { background: var(--white) }
+    .faq-wrap {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .faq-list { display: flex; flex-direction: column; gap: 14px }
+    .faq-item { border: 1px solid var(--border); border-radius: 24px; background: var(--surface-alt); overflow: hidden }
+    .faq-item:last-child { border-bottom: 1px solid var(--border) }
+    .faq-item:nth-child(even) .faq-panel { background: var(--white) }
+    .faq-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 24px;
+      background: var(--surface-alt);
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      transition: background .2s;
+    }
+    .faq-item:nth-child(even) .faq-btn { background: var(--white) }
+    .faq-btn:hover { background: rgba(91,195,236,.08) }
+    .faq-cat {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .62rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--primary-sub);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .faq-q { font-size: 1rem; font-weight: 700; color: var(--primary-deep); line-height: 1.5 }
+    .faq-icon {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: var(--primary-sub);
+      flex-shrink: 0;
+      transition: transform .25s;
+      line-height: 1;
+    }
+    .faq-btn[aria-expanded="true"] .faq-icon { transform: rotate(45deg) }
+    .faq-panel {
+      padding: 0 24px 22px;
+      background: var(--surface-alt);
+      display: none;
+    }
+    .faq-panel.open { display: block }
+    .faq-panel p { font-size: .92rem; color: var(--text-mid); line-height: 1.9 }
+
+    /* ── CTA Banner ── */
+    .cta-banner {
+      background:
+        linear-gradient(rgba(8,77,159,.84), rgba(44,166,224,.72)),
+        url('https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins_img-1024x723.webp') center/cover;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .cta-banner .section-label { color: rgba(255,255,255,.78); margin-bottom: 20px }
+    .cta-banner h2 { font-size: 2rem; font-weight: 700; margin-bottom: 16px; color: var(--white) }
+    .cta-banner p { font-size: .95rem; color: rgba(255,255,255,.88); margin-bottom: 40px }
+    .cta-banner-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* ── Flow ── */
+    .flow { background: var(--surface-alt) }
+    .flow-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative }
+    .flow-grid::before { content: ''; position: absolute; top: 27px; left: calc(12.5% + 12px); right: calc(12.5% + 12px); height: 1px; background: var(--border); z-index: 0 }
+    .flow-step { text-align: center; padding: 0 16px; position: relative; z-index: 1 }
+    .flow-num { width: 54px; height: 54px; border: 1.5px solid var(--primary); color: var(--primary-deep); font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 700; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,.9); margin-bottom: 18px; box-shadow: 0 8px 20px rgba(91,195,236,.12) }
+    .flow-step h3 { font-size: .88rem; font-weight: 700; color: var(--primary-deep); margin-bottom: 7px }
+    .flow-step p { font-size: .8rem; color: var(--text-light); line-height: 1.7 }
+
+    /* ── Form ── */
+    .form-section { background: var(--surface-alt); padding: var(--section); scroll-margin-top: 108px }
+    .form-wrap { max-width: 680px; margin: 0 auto; border: 1px solid var(--border); border-radius: 32px; overflow: hidden; background: var(--white); box-shadow: 0 18px 40px rgba(8, 77, 159, .05) }
+    .form-wrap-header { padding: 40px 40px 24px; border-bottom: 1px solid var(--border) }
+    .form-wrap-header h2 { font-size: 1.4rem; font-weight: 700; color: var(--primary-deep); margin-bottom: 8px }
+    .form-wrap-header p { font-size: .88rem; color: var(--text-light) }
+    .form-wrap iframe { display: block }
+    .form-download { text-align: center; margin-top: 24px }
+    .form-download a { font-size: .88rem; color: var(--primary-deep); text-decoration: underline; text-underline-offset: 3px }
+
+    /* ── Footer ── */
+    .footer { background: var(--primary); color: rgba(255,255,255,.82); padding: 56px 0 40px; font-size: .83rem }
+    .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,.24) }
+    .footer-logo { font-family: 'Montserrat', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 12px; letter-spacing: .04em }
+    .footer-address { line-height: 1.8 }
+    .footer-links { display: flex; flex-direction: column; gap: 10px }
+    .footer-links a { color: rgba(255,255,255,.82); transition: color .2s; font-size: .82rem }
+    .footer-links a:hover { color: var(--white) }
+    .footer-copy { text-align: center; padding-top: 28px; font-size: .75rem; color: rgba(255,255,255,.72); font-family: 'Montserrat', sans-serif }
+
+    /* helpers */
+    .mt-52 { margin-top: 52px }
+    .mt-56 { margin-top: 56px }
+    .text-center { text-align: center }
+
+    /* ── Responsive ── */
+    @media(max-width: 960px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 48px }
+      .hero-visual { display: none }
+      .hero-text { padding: 36px 28px }
+      .about-inner { grid-template-columns: 1fr; gap: 44px }
+      .science-inner { grid-template-columns: 1fr; gap: 48px }
+      .science-cards { grid-template-columns: repeat(2, 1fr) }
+      .reasons-grid { grid-template-columns: 1fr }
+      .usecases-grid { grid-template-columns: 1fr }
+      .scenes-grid { grid-template-columns: 1fr }
+      .regulation-timeline { grid-template-columns: 1fr }
+      .regulation-step { border-right: none; border-bottom: 1px solid var(--border) }
+      .regulation-step:last-child { border-bottom: none }
+      .flow-grid { grid-template-columns: repeat(2, 1fr); gap: 32px }
+      .flow-grid::before { display: none }
+      .usecase-banner { padding: 32px 28px }
+    }
+
+    @media(max-width: 768px) {
+      :root { --section: 72px 0 }
+      .pain-grid { grid-template-columns: 1fr }
+      body { padding-bottom: 92px }
+      h2.section-title { font-size: 1.7rem }
+      .hero { min-height: auto; padding: 64px 0 }
+      .hero h1 { font-size: 1.9rem }
+      .hero-stats { gap: 24px; flex-wrap: wrap }
+      .hero-actions { flex-direction: column; align-items: stretch }
+      .btn-primary, .btn-outline, .btn-outline-white, .btn-primary-light { width: 100% }
+      .science-cards { grid-template-columns: 1fr }
+      .compare-table th, .compare-table td { padding: 12px 14px; font-size: .82rem }
+      .regulation-body { padding: 22px }
+      .regulation-header { padding: 18px 22px; flex-wrap: wrap }
+      .form-wrap-header { padding: 28px 24px 20px }
+      .footer-inner { flex-direction: column; gap: 32px }
+      .header-tel { display: none }
+      .reasons-grid { grid-template-columns: 1fr }
+      .flow-grid { grid-template-columns: 1fr }
+      .usecase-banner { padding: 28px 20px }
+      .usecase-banner-text { font-size: 1.05rem }
+      .faq-btn { padding: 18px 20px }
+      .faq-panel { padding: 16px 20px 20px }
+      .cta-banner-actions { flex-direction: column }
+      .floating-cta {
+        top: auto;
+        right: 12px;
+        left: 12px;
+        bottom: 12px;
+        width: auto;
+        padding: 12px;
+        transform: none;
+        border-radius: 20px;
+      }
+      .floating-cta.is-hidden {
+        transform: translateY(12px);
+      }
+      .floating-cta-copy {
+        display: none;
+      }
+      .floating-cta .btn-primary {
+        min-height: 50px;
+        padding: 14px 48px 14px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <aside class="floating-cta" id="floatingCta" aria-label="固定お問い合わせ導線">
+    <span class="floating-cta-label">Contact</span>
+    <p class="floating-cta-copy">比較検討中でも資料請求・ご相談いただけます。</p>
+    <a href="#order" class="btn-primary">フォームへ進む</a>
+  </aside>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#top" class="header-logo">
+        <span class="header-logo-main">Three Benefits</span>
+        <span class="header-logo-sub">スリーベネフィッツ株式会社</span>
+      </a>
+      <div class="header-right">
+        <div>
+          <span class="header-tel-label">お電話でのお問い合わせ</span>
+          <span class="header-tel">03-6453-6905</span>
+        </div>
+        <a href="#order" class="btn-outline" style="padding:10px 50px 10px 24px;font-size:.85rem;">資料請求・ご相談</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Hero / ファーストビュー -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="hero-tag">Livestock Hygiene Management</span>
+          <h1>
+            その農場の衛生管理、<br>
+            次亜塩素だけで<br>
+            <span class="accent">大丈夫ですか？</span>
+          </h1>
+          <p class="lead">
+            クリアンスが発生させる二酸化塩素は、pHの影響を受けず、耐性を形成しません。飲水ライン・畜舎内除菌・空間衛生の3つのアプローチで、畜舎全体の衛生管理をサポートします。
+          </p>
+          <div class="hero-product-label">
+            <p class="label-title">予防衛生管理製品</p>
+            <p class="label-body">医薬品ではありません。除菌、消臭、清浄化にご利用いただけます。<br>殺菌、滅菌、治療に関わることは獣医師に相談・指導のもと行ってください。</p>
+          </div>
+          <div class="hero-actions">
+            <a href="#order" class="btn-primary">資料請求・ご相談</a>
+            <a href="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins.pdf" target="_blank" class="btn-outline">カタログを見る</a>
+          </div>
+          <p class="hero-cta-note">比較検討中の段階でもご利用いただけます。農場条件に応じた使い方の相談だけでも問題ありません。</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <div class="hero-img-placeholder">
+              <img
+                src="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins_img-1024x723.webp"
+                alt="水中除菌タブレット クリアンス"
+                onerror="this.style.display='none'">
+            </div>
+          </div>
+          <div class="hero-stat-badge">
+            <span class="num">100件<span style="font-size:.9rem;font-weight:400;">以上</span></span>
+            <p class="desc">全国農場・施設への<br>導入実績（CLOX社調べ）</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pain / Problem -->
+  <section class="pain" id="pain">
+    <div class="container">
+      <div class="pain-intro">
+        <p class="section-label">Problem</p>
+        <h2 class="section-title">その消毒、本当に<br>畜舎全体に届いていますか？</h2>
+        <div class="divider"></div>
+        <p class="section-sub" style="margin-bottom:44px;">畜産農場が見落としがちな3つの衛生リスク</p>
+      </div>
+      <div class="pain-grid">
+
+        <div class="pain-card">
+          <span class="pain-num">01 &nbsp;—&nbsp; Biofilm</span>
+          <h3>給水ラインと畜舎全体に菌が潜んでいる</h3>
+          <p>飲水ライン・乳頭飲水器の配管内壁にはバイオフィルム（菌の保護膜）が形成されます。畜舎内は水洗い作業が日常的に行われるが、床面・壁面・設備表面にもバイオフィルムが存在します。次亜塩素酸はその表面で有機物と反応して消費され、バイオフィルム内部の病原菌には届きにくい構造です。</p>
+        </div>
+
+        <div class="pain-card">
+          <span class="pain-num">02 &nbsp;—&nbsp; Resistance</span>
+          <h3>塩素を使い続けることで生まれる耐性リスク</h3>
+          <p>同じ消毒剤の長期使用は、その消毒剤に対する耐性菌の選択的な残存・増殖リスクにつながります。抗生物質との交差耐性の懸念も報告されています。二酸化塩素は作用機序上、菌が耐性を獲得しにくい特性があり、長期的な農場衛生管理に適しています。</p>
+        </div>
+
+        <div class="pain-card">
+          <span class="pain-num">03 &nbsp;—&nbsp; Water Refusal</span>
+          <h3>家畜が水を飲まなくなるリスク</h3>
+          <p>養鶏では飲水量の低下が発育遅延・出荷日数の延長に直結し、酪農では乳量低下につながります。衛生管理の強化と飲水量確保、作業者への安全性を同時に実現する消毒剤の選択が重要です。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Regulation -->
+  <section class="regulation" id="regulation">
+    <div class="container">
+      <p class="section-label">Regulation</p>
+      <h2 class="section-title">飼養衛生管理基準が示す、<br>水質管理の重要性</h2>
+      <div class="divider"></div>
+      <p class="section-sub" style="margin-bottom:44px;">農林水産省の基準強化と、今農場に求められる対応</p>
+
+      <div class="regulation-inner">
+        <div class="regulation-header">
+          <span class="regulation-label">Public Reference</span>
+          <h3>農林水産省「飼養衛生管理基準」の強化（2020年改訂）</h3>
+        </div>
+        <div class="regulation-body">
+          <table class="regulation-detail-table">
+            <tr><th>改訂の経緯</th><td>高病原性鳥インフルエンザ・豚コレラ（CSF）などの感染症侵入防止を目的として、農林水産省は家畜伝染病予防法に基づく飼養衛生管理基準を強化</td></tr>
+            <tr><th>対象畜種</th><td>採卵鶏・ブロイラー・養豚・乳用牛・肉用牛など主要畜種</td></tr>
+            <tr><th>主な改訂内容</th><td>野生動物の侵入防止、衛生管理区域の設定、車両・人員の消毒設備整備、飲水・給水設備の衛生管理強化</td></tr>
+            <tr><th>管理記録の整備</th><td>消毒・衛生管理の実施記録の保管が求められる</td></tr>
+          </table>
+
+          <div class="regulation-timeline">
+            <div class="regulation-step">
+              <span class="regulation-step-num">Before</span>
+              <h4>従来の管理体制</h4>
+              <p>塩素系消毒剤を中心とした定期的な飲水管理。水質環境（pH・有機物負荷）による消毒効果の変動が考慮されにくかった。</p>
+            </div>
+            <div class="regulation-step">
+              <span class="regulation-step-num">2020年 改訂</span>
+              <h4>飼養衛生管理基準の強化</h4>
+              <p>野生動物対策・消毒設備・給水衛生管理の強化が義務化。農場内の衛生管理を記録として整備することが求められるようになった。</p>
+            </div>
+            <div class="regulation-step">
+              <span class="regulation-step-num">Now</span>
+              <h4>今求められる管理水準</h4>
+              <p>水質環境（pH・有機物）を踏まえたより確実な飲水衛生管理。バイオフィルム対応・空間衛生を含む継続的な衛生管理体制の整備。</p>
+            </div>
+          </div>
+
+          <div class="regulation-result">
+            <div class="regulation-result-check">✓</div>
+            <div>
+              <h4>より確実な畜舎全体の衛生管理が、農場の防疫力を支えます</h4>
+              <p>飼養衛生管理基準の強化により、消毒・衛生管理の実施と記録が農場に求められるようになりました。飲水ライン・畜舎内・空間衛生を横断した包括的な管理体制が、衛生管理水準の向上につながります。</p>
+            </div>
+          </div>
+          <p class="regulation-disclaimer">本セクションは農林水産省の公表資料をもとに構成しています。クリアンスの効果を直接証明・保証するものではありません。詳細は各都道府県の家畜保健衛生所にご相談ください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About / Product -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-text">
+          <p class="section-label">Product</p>
+          <h2 class="section-title">水中除菌タブレット<br>クリアンス（CREINS）</h2>
+          <div class="divider"></div>
+          <p>クリアンスは、水に投入するだけで二酸化塩素（ClO₂）を発生させる水中衛生管理タブレットです。飲水ライン・配管のバイオフィルム対策と飲料水の清浄化、畜舎内の除菌、空間の菌数・ウィルス数を減らす空間衛生管理という3つのアプローチで、畜舎全体の衛生環境整備をサポートします。</p>
+          <p>畜舎全体の菌数・ウィルス数を継続的に抑えることで感染リスクを低減し、抗生物質やワクチンへの依存を減らし、衛生費の削減と生産性の向上につながる環境づくりをサポートします。個体への事後対応から、群全体を守る予防衛生管理へ。</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <svg class="about-feature-icon" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="9" stroke="rgb(44,166,224)" stroke-width="1.5"/>
+                <polyline points="6,10.5 9,13.5 14,7.5" stroke="rgb(44,166,224)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="about-feature-text">
+                <strong>タブレット形状で取り扱いが簡単</strong>
+                給水タンク・飲水槽に投入するだけ。特別な設備・資格は不要です。
+              </div>
+            </div>
+            <div class="about-feature">
+              <svg class="about-feature-icon" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="9" stroke="rgb(44,166,224)" stroke-width="1.5"/>
+                <polyline points="6,10.5 9,13.5 14,7.5" stroke="rgb(44,166,224)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="about-feature-text">
+                <strong>pH・有機物負荷の影響を受けにくく、効果が安定</strong>
+                地下水・井戸水を使うアルカリ性水質の農場でも、低濃度で安定した衛生管理が可能です。
+              </div>
+            </div>
+            <div class="about-feature">
+              <svg class="about-feature-icon" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="9" stroke="rgb(44,166,224)" stroke-width="1.5"/>
+                <polyline points="6,10.5 9,13.5 14,7.5" stroke="rgb(44,166,224)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="about-feature-text">
+                <strong>耐性を形成しない — 長期使用でも効果が維持</strong>
+                二酸化塩素は作用機序上、菌が耐性を獲得しにくい特性があります（CLOX社資料より）。
+              </div>
+            </div>
+            <div class="about-feature">
+              <svg class="about-feature-icon" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="9" stroke="rgb(44,166,224)" stroke-width="1.5"/>
+                <polyline points="6,10.5 9,13.5 14,7.5" stroke="rgb(44,166,224)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="about-feature-text">
+                <strong>皮膚刺激性が低く、作業者・畜体への接触も安全</strong>
+                空間噴霧や畜舎内での使用において、作業者や畜体への配慮が可能な設計です。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-img-wrap">
+          <img
+            src="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins_img-1024x723.webp"
+            alt="クリアンス製品画像"
+            onerror="this.parentElement.style.background='var(--surface-blue)';this.parentElement.style.height='320px'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Reasons / Why CREINS -->
+  <section class="reasons" id="reasons">
+    <div class="container">
+      <div class="reasons-header">
+        <p class="section-label">Why CREINS</p>
+        <h2 class="section-title">畜産農場に選ばれる<br>3つの理由</h2>
+        <div class="divider"></div>
+        <p class="section-sub">既存設備そのままで、確実な水質衛生管理を。</p>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <span class="reason-num">01 &nbsp;—&nbsp; Simple</span>
+          <h3>既存の給水設備に<br>そのまま使える</h3>
+          <p>タブレットを給水タンク・飲水槽に投入するだけ。設備改修や専門資格は不要。飲水管理から畜舎内除菌まで、一製品でカバーします。</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">02 &nbsp;—&nbsp; Stable Effect</span>
+          <h3>アルカリ性水質・<br>有機物負荷環境でも安定</h3>
+          <p>pH非依存の二酸化塩素は、地下水や井戸水を使う農場でも効果が安定しています。低濃度での残留性が高く、配管内を長く衛生に保つことをサポートします。耐性を形成しないため、長期使用でも効果が維持されます。</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-num">03 &nbsp;—&nbsp; Safety</span>
+          <h3>作業者・家畜への<br>安全性に配慮した設計</h3>
+          <p>皮膚刺激性が低く、畜体に直接かかっても安全に使用できます。低臭気で家畜の飲水忌避リスクも低い設計です。耐性を形成しないため、抗生物質・ワクチンへの依存を減らす環境づくりをサポートします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Use Cases / Applications (3つの衛生管理) -->
+  <section class="usecases" id="usecases">
+    <div class="container">
+      <p class="section-label">Applications</p>
+      <h2 class="section-title">畜舎全体で使える、<br>3つの衛生管理</h2>
+      <div class="divider"></div>
+      <p class="section-sub">飲水から空間まで、畜舎全体をカバーします</p>
+      <div class="usecases-grid">
+
+        <div class="usecase-card">
+          <div class="usecase-num">01</div>
+          <h3>飲水ライン・配管の<br>バイオフィルム対策と飲料水の清浄化</h3>
+          <p>給水ライン・乳頭飲水器の配管内壁に蓄積するバイオフィルムを分解・除去。アルカリ性水質や有機物負荷の高い環境でも安定した水質衛生管理をサポートします。畜種を問わず、飲水設備への投入からすぐに使い始めることができます。</p>
+        </div>
+
+        <div class="usecase-card">
+          <div class="usecase-num">02</div>
+          <h3>畜舎内の除菌</h3>
+          <p>床面・壁面・設備表面への噴霧・洗浄による畜舎内除菌に活用できます。皮膚刺激性が低いため、畜体に直接かかっても安全に使用でき、作業者への負担も軽減します。畜舎は水洗いの機会が多く、バイオフィルムが必ず存在します。その除去に有効です。</p>
+        </div>
+
+        <div class="usecase-card">
+          <div class="usecase-num">03</div>
+          <h3>空間の菌数・ウィルス数を<br>減らす空間衛生管理</h3>
+          <p>空間噴霧により、畜舎内の浮遊菌数・ウィルス数を継続的に低減します。感染リスクの低下は、抗生物質・ワクチンへの依存を減らし、衛生費の削減と薬剤が効きやすい環境の維持につながります。</p>
+        </div>
+
+      </div>
+      <div class="usecase-banner">
+        <p class="usecase-banner-label">Goal</p>
+        <p class="usecase-banner-text">個体への事後対応から、<strong>群全体を守る予防衛生管理</strong>へ</p>
+        <p class="usecase-banner-sub">畜舎全体の衛生環境を整えることで、安全・安心な畜産物の安定供給をサポートします。<br>飲水ライン・畜舎内除菌・空間衛生の3つが揃って初めて、群管理の基盤が整います。</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Scenes / Applications (畜種別導入イメージ) -->
+  <section class="scenes" id="scenes">
+    <div class="container">
+      <p class="section-label">Applications</p>
+      <h2 class="section-title">畜種別 導入イメージ</h2>
+      <div class="divider"></div>
+      <p class="section-sub">養鶏・養豚・酪農のそれぞれの衛生管理課題に対応します</p>
+      <div class="scenes-grid">
+
+        <div class="scene-card">
+          <div class="scene-img">
+            <div class="scene-img-placeholder" style="background:#e8f0e4;">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <ellipse cx="26" cy="32" rx="13" ry="10" stroke="#8aab78" stroke-width="1.5"/>
+                <circle cx="36" cy="22" r="7" stroke="#8aab78" stroke-width="1.5"/>
+                <path d="M43 21 L47 23 L43 25" stroke="#8aab78" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="38" cy="20" r="1.5" fill="#8aab78"/>
+                <path d="M33 15 Q34 12 36 14 Q37 11 39 13" stroke="#c97878" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <line x1="22" y1="42" x2="20" y2="48" stroke="#8aab78" stroke-width="1.5"/>
+                <line x1="30" y1="42" x2="32" y2="48" stroke="#8aab78" stroke-width="1.5"/>
+                <path d="M17 30 Q14 26 18 24" stroke="#8aab78" stroke-width="1.5" fill="none"/>
+              </svg>
+              <span>Poultry</span>
+            </div>
+          </div>
+          <div class="scene-body">
+            <h3>養鶏（採卵鶏・ブロイラー）</h3>
+            <p>入雛前後の給水設備洗浄・配管除菌に加え、空間噴霧による畜舎内衛生管理にも活用できます。皮膚刺激性が低いため、鶏が空間内にいる状態での使用にも対応します。</p>
+            <div class="scene-uses">
+              <span class="scene-use-item">飲水ライン・乳頭飲水器の衛生管理</span>
+              <span class="scene-use-item">畜舎内の空間噴霧・床面除菌</span>
+              <span class="scene-use-item">農場入口の踏み込み消毒槽</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-card">
+          <div class="scene-img">
+            <div class="scene-img-placeholder" style="background:#f0e8e4;">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <ellipse cx="25" cy="34" rx="16" ry="11" stroke="#c8907a" stroke-width="1.5"/>
+                <circle cx="10" cy="30" r="9" stroke="#c8907a" stroke-width="1.5"/>
+                <ellipse cx="5" cy="31" rx="4" ry="3" stroke="#c8907a" stroke-width="1.5"/>
+                <circle cx="4" cy="31" r="1" fill="#c8907a"/><circle cx="6" cy="31" r="1" fill="#c8907a"/>
+                <circle cx="12" cy="27" r="1.5" fill="#c8907a"/>
+                <path d="M13 22 Q10 16 7 19" stroke="#c8907a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <line x1="16" y1="45" x2="15" y2="50" stroke="#c8907a" stroke-width="2"/>
+                <line x1="24" y1="45" x2="24" y2="50" stroke="#c8907a" stroke-width="2"/>
+                <line x1="32" y1="45" x2="33" y2="50" stroke="#c8907a" stroke-width="2"/>
+                <path d="M41 32 Q46 28 44 24" stroke="#c8907a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              </svg>
+              <span>Swine</span>
+            </div>
+          </div>
+          <div class="scene-body">
+            <h3>養豚</h3>
+            <p>分娩舎・育成舎の飲水ライン洗浄に。豚コレラ等への防疫対策として畜舎内除菌・農場ゲートの消毒槽にも活用できます。皮膚刺激性が低く、豚舎内での使用にも安心です。</p>
+            <div class="scene-uses">
+              <span class="scene-use-item">分娩舎・育成舎の飲水ライン衛生管理</span>
+              <span class="scene-use-item">畜舎内の噴霧除菌・設備洗浄</span>
+              <span class="scene-use-item">農場ゲート・車両消毒槽</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-card">
+          <div class="scene-img">
+            <div class="scene-img-placeholder" style="background:#e4ecf4;">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <ellipse cx="26" cy="34" rx="18" ry="11" stroke="#7090b0" stroke-width="1.5"/>
+                <rect x="6" y="20" width="14" height="12" rx="4" stroke="#7090b0" stroke-width="1.5"/>
+                <ellipse cx="13" cy="33" rx="5" ry="3.5" stroke="#7090b0" stroke-width="1.5"/>
+                <circle cx="16" cy="24" r="1.5" fill="#7090b0"/>
+                <path d="M8 20 Q6 14 10 16" stroke="#7090b0" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M18 20 Q20 14 16 16" stroke="#7090b0" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <line x1="16" y1="45" x2="15" y2="50" stroke="#7090b0" stroke-width="2"/>
+                <line x1="24" y1="45" x2="24" y2="50" stroke="#7090b0" stroke-width="2"/>
+                <line x1="32" y1="45" x2="33" y2="50" stroke="#7090b0" stroke-width="2"/>
+                <path d="M22 45 Q26 50 30 45" stroke="#c8b0a0" stroke-width="1.5" fill="none"/>
+                <path d="M44 32 Q50 26 46 22" stroke="#7090b0" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              </svg>
+              <span>Dairy</span>
+            </div>
+          </div>
+          <div class="scene-body">
+            <h3>酪農・乳牛</h3>
+            <p>飲水槽・搾乳ラインの衛生管理に加え、牛舎床面・設備の除菌にも対応し、皮膚刺激性が低く作業者にも畜体にも安心して使用できます。</p>
+            <div class="scene-uses">
+              <span class="scene-use-item">飲水槽・搾乳ラインの衛生管理</span>
+              <span class="scene-use-item">牛舎床面・設備表面の除菌</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Science -->
+  <section class="science" id="science">
+    <div class="container">
+      <p class="section-label">Science</p>
+      <h2 class="section-title">二酸化塩素が選ばれる<br>2つの科学的特性</h2>
+      <div class="divider"></div>
+      <p class="section-sub">クリアンスが発生させる ClO₂ の優位性をロジカルに理解する</p>
+
+      <!-- Science cards -->
+      <div class="science-cards">
+        <div class="science-card">
+          <div class="science-card-header">
+            <span class="science-card-num">01</span>
+            <h3>バイオフィルム浸透</h3>
+          </div>
+          <div class="science-card-body">
+            <div class="science-card-value">高浸透性</div>
+            <p>強い酸化力により、配管内壁のバイオフィルム（菌の保護膜）内部まで浸透して不活化します。次亜塩素酸が表面で消費されてしまう問題を解消します。</p>
+          </div>
+        </div>
+        <div class="science-card">
+          <div class="science-card-header">
+            <span class="science-card-num">02</span>
+            <h3>耐性形成なし・安全性</h3>
+          </div>
+          <div class="science-card-body">
+            <div class="science-card-value">選択的酸化</div>
+            <p>二酸化塩素は反応性の高い部位を選択的に酸化して菌の機能を阻害するため、菌が耐性を獲得しにくい特性があります。皮膚刺激性が低く、作業者・畜体への接触も安全に使用できます。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="science-inner">
+        <div class="science-text">
+          <h3 style="font-size:1.2rem;font-weight:700;color:var(--primary-deep);margin-bottom:16px;">アルカリ性水質で次亜塩素が効きにくい理由</h3>
+          <p>次亜塩素酸ナトリウムの有効成分である次亜塩素酸（HOCl）は、水のpHに強く影響を受けます。アルカリ性になるほど有効成分の割合が著しく低下し、pH8.5では元の約9%しか残りません。</p>
+          <p>日本の地下水・井戸水はpH7.5〜8.5程度になることがあります。畜産農場で地下水・井戸水を使用している場合、アルカリ性水質においては次亜塩素酸系消毒剤の効果が低下している可能性があります。</p>
+          <p>二酸化塩素（ClO₂）はpHの影響をほとんど受けないため、アルカリ性水質を使用する農場環境での水質衛生管理に適しています。反応性の高い部位を選択的に酸化する作用特性により、菌が耐性を獲得しにくい設計です。</p>
+          <p class="science-note">グラフ・数値は公知の化学特性データに基づく参考値です。試験条件や水質環境により異なります。効果を保証するものではありません。</p>
+        </div>
+
+        <div class="ph-chart">
+          <p class="ph-chart-title">pH別 次亜塩素酸 有効成分残存率（参考値）</p>
+          <div class="ph-row">
+            <div class="ph-row-label">pH 7.0</div>
+            <div class="ph-bar-bg"><div class="ph-bar-fill c-high" style="width:76%"></div></div>
+            <div class="ph-row-val">76%</div>
+          </div>
+          <div class="ph-row">
+            <div class="ph-row-label">pH 7.5</div>
+            <div class="ph-bar-bg"><div class="ph-bar-fill c-mid" style="width:50%"></div></div>
+            <div class="ph-row-val">50%</div>
+          </div>
+          <div class="ph-row">
+            <div class="ph-row-label">pH 8.0</div>
+            <div class="ph-bar-bg"><div class="ph-bar-fill c-low" style="width:24%"></div></div>
+            <div class="ph-row-val">24%</div>
+          </div>
+          <div class="ph-row">
+            <div class="ph-row-label">pH 8.5</div>
+            <div class="ph-bar-bg"><div class="ph-bar-fill c-low" style="width:9.1%"></div></div>
+            <div class="ph-row-val">9.1%</div>
+          </div>
+          <p class="ph-chart-source">公知の化学特性データに基づく参考値<br>効果を保証するものではありません</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Compare / Comparison -->
+  <section class="compare" id="compare">
+    <div class="container">
+      <div class="compare-header">
+        <p class="section-label">Comparison</p>
+        <h2 class="section-title">他の消毒剤との比較</h2>
+        <div class="divider"></div>
+        <p class="section-sub" style="margin-bottom:0;">畜産農場での使用を想定した特性比較</p>
+      </div>
+      <div class="compare-table-wrap mt-56">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>比較項目</th>
+              <th>次亜塩素酸ナトリウム</th>
+              <th>逆性石鹸</th>
+              <th class="col-creins">クリアンス（ClO₂）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>pH依存性</td>
+              <td><span class="val-bad">高い</span><br><small style="color:#aaa;font-size:.73rem">pH8で約24%に低下</small></td>
+              <td><span class="val-good">低い</span></td>
+              <td class="col-creins"><span class="val-good">低い</span></td>
+            </tr>
+            <tr>
+              <td>バイオフィルム浸透性</td>
+              <td><span class="val-bad">低い</span></td>
+              <td><span class="val-bad">低い</span></td>
+              <td class="col-creins"><span class="val-good">高い</span></td>
+            </tr>
+            <tr>
+              <td>有機物負荷への耐性</td>
+              <td><span class="val-bad">低い（すぐ失活）</span></td>
+              <td><span class="val-bad">低い</span><br><small style="color:#aaa;font-size:.73rem">有機物で効果低下</small></td>
+              <td class="col-creins"><span class="val-good">高い</span></td>
+            </tr>
+            <tr>
+              <td>家畜の飲水への影響</td>
+              <td><span class="val-bad">塩素臭あり</span></td>
+              <td><span class="val-bad">飲水用途には不向き</span></td>
+              <td class="col-creins"><span class="val-good">低臭気</span></td>
+            </tr>
+            <tr>
+              <td>取り扱いの容易さ</td>
+              <td><span class="val-mid">液体・漏洩注意</span></td>
+              <td><span class="val-mid">液体・希釈管理</span></td>
+              <td class="col-creins"><span class="val-good">タブレット・簡便</span></td>
+            </tr>
+            <tr>
+              <td>薬剤耐性リスク</td>
+              <td><span class="val-bad">懸念あり</span><br><small style="color:#aaa;font-size:.73rem">耐性菌の選択圧</small></td>
+              <td><span class="val-bad">懸念あり</span></td>
+              <td class="col-creins"><span class="val-good">耐性形成なし</span></td>
+            </tr>
+            <tr>
+              <td>皮膚・畜体への刺激</td>
+              <td><span class="val-bad">刺激あり</span></td>
+              <td><span class="val-bad">要注意</span><br><small style="color:#aaa;font-size:.73rem">濃度管理が必要</small></td>
+              <td class="col-creins"><span class="val-good">低い</span><br><small style="color:#888;font-size:.73rem">畜体への接触も安全</small></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare-note">※ 逆性石鹸は第四級アンモニウム塩系製剤の一般的な特性を想定した参考比較です。各製品の表示、施設環境・使用条件により異なります。</p>
+    </div>
+  </section>
+
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h2>農場の衛生管理を、<br>落ち着いて比較できる状態に。</h2>
+      <p>飲水・除菌・空間衛生まで、農場条件に応じた使い方や導入イメージをご案内します。</p>
+      <div class="cta-banner-actions">
+        <a href="#order" class="btn-primary-light">資料請求・ご相談</a>
+        <a href="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins.pdf" target="_blank" class="btn-outline-white">カタログ請求（PDF）</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Flow / Process -->
+  <section class="flow" id="flow">
+    <div class="container">
+      <p class="section-label">Process</p>
+      <h2 class="section-title">ご注文・ご利用までの流れ</h2>
+      <div class="divider"></div>
+      <p class="section-sub">かんたん4ステップでスタートできます</p>
+      <div class="flow-grid">
+        <div class="flow-step">
+          <div class="flow-num">01</div>
+          <h3>フォームより<br>お問い合わせ</h3>
+          <p>下記フォームからお気軽にご連絡ください</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">02</div>
+          <h3>お見積り・<br>ご提案</h3>
+          <p>担当よりお見積りと利用方法をご提案</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">03</div>
+          <h3>ご発注</h3>
+          <p>ご注文確定後、迅速にお届けいたします</p>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">04</div>
+          <h3>ご利用開始</h3>
+          <p>給水設備に投入するだけ。かんたんにスタートできます</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Form / Contact -->
+  <section class="form-section" id="order">
+    <div class="container">
+      <div class="form-wrap">
+        <div class="form-wrap-header">
+          <h2>資料請求・ご相談・ご注文</h2>
+          <p>比較検討中の段階でもご利用いただけます。農場の規模・畜種・現在の水質管理をご記入いただけますと、より具体的なご提案が可能です。</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+          width="100%"
+          height="900"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          style="display:block;"
+          title="クリアンス 畜産農場向け お問い合わせ・資料請求フォーム"
+          loading="lazy">
+          読み込んでいます...
+        </iframe>
+      </div>
+      <div class="form-download">
+        <a href="https://www.3benefits.jp/wp/wp-content/uploads/2024/03/creins.pdf" target="_blank">カタログダウンロード（PDF）</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="faq-wrap">
+        <p class="section-label text-center">FAQ</p>
+        <h2 class="section-title text-center">導入前によくあるご質問</h2>
+        <div class="divider center"></div>
+        <p class="section-sub text-center">「まずは確認したい」という段階で気になりやすいポイントをまとめました</p>
+        <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span>
+              <span class="faq-cat">効果について</span>
+              <span class="faq-q">次亜塩素酸ナトリウムと何が違いますか？</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel">
+            <p>次亜塩素酸ナトリウムの有効成分（次亜塩素酸）はpHが高くなるほど失活しやすく、pH8.0では有効成分が約24%まで低下します。クリアンスが発生させる二酸化塩素はpHの影響をほとんど受けないため、地下水・井戸水を使用するアルカリ性水質の農場でも安定した衛生管理をサポートします。また、バイオフィルムへの浸透性が高く、耐性を形成しない点も大きな違いです。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span>
+              <span class="faq-cat">安全性について</span>
+              <span class="faq-q">使い続けると耐性菌が生まれませんか？</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel">
+            <p>二酸化塩素は反応性の高い部位を選択的に酸化して菌の機能を阻害するため、菌が耐性を獲得しにくい特性があります（CLOX社資料より）。長期使用においても効果の維持が期待できます。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span>
+              <span class="faq-cat">安全性について</span>
+              <span class="faq-q">家畜や作業者に直接かかっても安全ですか？</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel">
+            <p>クリアンスは皮膚刺激性が低く、畜体に直接かかっても安全に使用できる設計です（CLOX社資料より）。低臭気設計のため作業者への負担も軽減します。なお、使用方法・濃度については事前にご確認いただき、適切な濃度でのご使用をお願いいたします。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span>
+              <span class="faq-cat">使用方法について</span>
+              <span class="faq-q">どんな設備が必要ですか？投入頻度は？</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel">
+            <p>特別な設備改修や専門資格は不要です。タブレットを給水タンク・飲水槽に投入するだけでご利用いただけます。投入量・使用頻度は農場の規模・水量・水質（pH・有機物負荷）により異なります。お問い合わせ時に農場の状況をお知らせいただければ、担当より最適な使用方法をご提案します。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span>
+              <span class="faq-cat">使用方法について</span>
+              <span class="faq-q">飲水以外（空間噴霧・畜舎除菌）にも使えますか？</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel">
+            <p>飲水ライン・配管の衛生管理のほか、畜舎内の除菌（床面・壁面・設備表面への噴霧・洗浄）や空間衛生管理（空間噴霧）にも活用できます。畜種・用途によって使用方法が異なりますので、詳細はお問い合わせください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span>
+              <span class="faq-cat">安全性について</span>
+              <span class="faq-q">第三者機関での試験はされていますか？</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel">
+            <p>一般財団法人 日本食品分析センターにて試験を実施しています。試験結果の詳細はお問い合わせにてご確認いただけます。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">
+            <span>
+              <span class="faq-cat">対応施設について</span>
+              <span class="faq-q">養鶏・養豚・酪農以外にも使えますか？</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel">
+            <p>水を使う畜産施設・農業施設であれば幅広くご対応が可能です。また、畜産以外にも温浴施設・プール施設・スポーツ施設での導入実績があります。ご不明な点はお問い合わせください。</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-logo">Three Benefits</p>
+          <p class="footer-address">
+            スリーベネフィッツ株式会社<br>
+            〒105-0014 東京都港区芝3-22-7 芝NKビル3階<br>
+            TEL: 03-6453-6905　FAX: 03-6453-6906
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.3benefits.jp/" target="_blank">トップページ</a>
+          <a href="https://www.3benefits.jp/about/" target="_blank">会社情報</a>
+          <a href="https://www.3benefits.jp/privacypolicy/" target="_blank">プライバシーポリシー</a>
+          <a href="https://www.3benefits.jp/inquiry/" target="_blank">お問い合わせ</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2024 Three Benefits Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* Smooth scroll */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    /* Accordion */
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        const panel = btn.nextElementSibling;
+        panel.classList.toggle('open', !expanded);
+      });
+    });
+
+    const floatingCta = document.getElementById('floatingCta');
+    const orderSection = document.getElementById('order');
+    const heroSection = document.getElementById('top');
+
+    if (floatingCta && orderSection && 'IntersectionObserver' in window) {
+      const floatingState = {
+        heroVisible: false,
+        orderVisible: false
+      };
+
+      const syncFloatingCta = () => {
+        const shouldHide = floatingState.orderVisible || (window.innerWidth > 768 && floatingState.heroVisible);
+        floatingCta.classList.toggle('is-hidden', shouldHide);
+      };
+
+      const toggleFloatingCta = entries => {
+        entries.forEach(entry => {
+          if (entry.target === orderSection) {
+            floatingState.orderVisible = entry.isIntersecting;
+          }
+
+          if (entry.target === heroSection) {
+            floatingState.heroVisible = entry.isIntersecting;
+          }
+        });
+
+        syncFloatingCta();
+      };
+
+      const observer = new IntersectionObserver(toggleFloatingCta, {
+        threshold: 0.2
+      });
+
+      if (heroSection) observer.observe(heroSection);
+      observer.observe(orderSection);
+      window.addEventListener('resize', syncFloatingCta);
+    }
+  </script>
+
+</body>
+</html>
